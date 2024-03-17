@@ -531,14 +531,6 @@ require("lazy").setup({
 						headline = "Log",
 						target = Orgmode_log_file,
 					},
-          u = {
-            description = "TODO w/ sched",
-            template = "* TODO %? ",
-            target = Orgmode_todo_file,
-            datetree = {
-              tree_type = "day",
-            },
-          },
           t = {
             description = "TODO",
             template = "* TODO %?\nSCHEDULED: %t",
