@@ -1,6 +1,8 @@
 * dotfiles
 Handled with chezmoi https://www.chezmoi.io/ (https://github.com/twpayne/chezmoi)
 
+(( chezmoi init --apply --verbose git@github.com:$GITHUB_USERNAME/dotfiles.git ))
+
 Most colorthemes are: https://github.com/catppuccin/catppuccin
 
 I use Iosevka Nerd Font for all fonts: https://github.com/ryanoasis/nerd-fonts/
