@@ -3,6 +3,8 @@ Handled with chezmoi https://www.chezmoi.io/ (https://github.com/twpayne/chezmoi
 
 Most colorthemes are: https://github.com/catppuccin/catppuccin
 
+I use Iosevka Nerd Font for all fonts: https://github.com/ryanoasis/nerd-fonts/
+
 ** NeoVim
 - fd (fd-find) required by telescope https://github.com/sharkdp/fd 
 - ripgrep (rg) required by telescope https://github.com/BurntSushi/ripgrep
