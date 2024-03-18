@@ -9,7 +9,7 @@ curl
 wget
 neovim
 alacritty
-
+emacs
 firefox
 pcloud
 unzip
@@ -24,3 +24,4 @@ protonvpn-cli
 protonvpn-gui
 todoist-electron
 discord
+ulauncher
