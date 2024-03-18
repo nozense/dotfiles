@@ -1,7 +1,11 @@
 * dotfiles
 Handled with chezmoi https://www.chezmoi.io/ (https://github.com/twpayne/chezmoi)
 
-(( chezmoi init --apply --verbose git@github.com:$GITHUB_USERNAME/dotfiles.git ))
+(( 
+chezmoi init git@github.com:$GITHUB_USERNAME/dotfiles.git 
+
+chezmoi apply
+))
 
 Most colorthemes are: https://github.com/catppuccin/catppuccin
 
