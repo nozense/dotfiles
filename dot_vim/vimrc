@@ -17,6 +17,9 @@ set encoding=utf8 	" Set utf8 as standard encoding
 set guioptions-=m  	" No menu bar
 set guioptions-=T  	" No toolbar
 set guioptions-=r  	" No scrollbar
+set number              " Show current line number
+set relativenumber      " Show relative line numbers
+set termguicolors       " for catppuccin to display correctly
 
 " Make a home dir!
 if has('win32') || has ('win64')
@@ -31,8 +34,7 @@ silent! so $LOCALRC
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
@@ -51,8 +53,6 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-let g:airline_theme='dracula'
-colorscheme dracula
-
-
+:colorscheme catppuccin_macchiato
+let g:airline_theme = 'catppuccin_macchiato'
 
