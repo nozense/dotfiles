@@ -1,0 +1,18 @@
+# path in .zshenv
+# echo $PATH <- in bash to list them.
+# Example :  export PATH=/opt/nvim-linux64/bin:$PATH
+
+
+# PROMPT
+PROMPT="%{$(tput setaf 128)%}%n{$(tput setaf 15)%}@%{$(tput setaf 207)%}%m%{$(tput setaf 128)%}:%T:%{$(tput setaf 14)%}[%~]%{$(tput setaf 128)%}> %{$(tput sgr0)%}"
+
+# ALIAS
+#
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias emacs="emacs -nw"
+
+alias n="nvim"
+
+
