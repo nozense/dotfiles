@@ -1,4 +1,9 @@
 * .emacs.d
+
+!!! This is broken!
+!!! Mostly the folder struckture from me moving to neovim.
+!!! Will update it to a working setup for the future!
+
 This is just my emacs conf.
 
 ** elisp/
