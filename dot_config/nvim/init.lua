@@ -30,7 +30,7 @@ vim.g.maplocalleader = " "
 -- ======================
 
 -- term colors
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 
 -- Spellcheck with :spell
 vim.opt.spelllang = 'sv'
