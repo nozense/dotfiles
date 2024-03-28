@@ -97,7 +97,8 @@
 
 * Org-mode + extras
 
-#+begin_src emacs-lisp
+Not using org in emacs any more
+"#+begin_src emacs-lisp"
         (use-package org
           :config
           ;; Don't show Done in agenda
@@ -131,7 +132,7 @@
           (add-hook 'org-mode-hook #'org-modern-mode)
           (add-hook 'org-agenda-finalize-hook #'org-modern-agenda))
   
-#+end_src
+"#+end_src"
 
 * God-mode (maybe this is un-needed)
 
@@ -368,7 +369,8 @@ Vertico, Marginalia, Consult, Embark, Orderless
 * org-roam
 From SystemCrafters.net
 
-#+begin_src emacs-lisp
+Not using org-roam any more
+"#+begin_src emacs-lisp"
   (use-package org-roam
     :ensure t
     :init
@@ -386,7 +388,7 @@ From SystemCrafters.net
            ("C-M-i"    . completion-at-point))
     :config
     (org-roam-setup))
-#+end_src
+"#+end_src"
 
 * Other packages
 

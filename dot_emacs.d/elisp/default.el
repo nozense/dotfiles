@@ -20,27 +20,27 @@
 ;;                ;;
 ;;;;;;;;;;;;;;;;;;;;
 
-(load "myElisp")
-(global-set-key
- (kbd "C-c n j") 'myRoamJournal)
-(global-set-key
- (kbd "C-c s")
- (lambda () (interactive)
-   (myCreateShortFictionFile)))
+;; (load "myElisp")
+;; (global-set-key
+;;  (kbd "C-c n j") 'myRoamJournal)
+;; (global-set-key
+;;  (kbd "C-c s")
+;;  (lambda () (interactive)
+ ;;   (myCreateShortFictionFile)))
 
 
 
 ;; Make a cusom agenda for non-schedueled todos
-(setq org-agenda-custom-commands
-      '(("c" . "Custom Agendas")
-        ("cu" "Unscheduled TODO"
-         ((todo ""
-                ((org-agenda-overriding-header "\nUnscheduled TODO")
-                 (org-agenda-skip-function '(org-agenda-skip-entry-if 'timestamp)))))
-         nil
-         nil)
-	("cs" "skriver todo"  tags-todo "CATEGORY=\"writings\"")
-	))
+;; (setq org-agenda-custom-commands
+;;       '(("c" . "Custom Agendas")
+;;         ("cu" "Unscheduled TODO"
+;;         ((todo ""
+;;                ((org-agenda-overriding-header "\nUnscheduled TODO")
+;;                 (org-agenda-skip-function '(org-agenda-skip-entry-if 'timestamp)))))
+;;         nil
+;;         nil)
+;;	("cs" "skriver todo"  tags-todo "CATEGORY=\"writings\"")
+;;	))
 
 ;;;;;;;;;;;;;;;;;;
 ;;              ;;
@@ -48,15 +48,15 @@
 ;;              ;;
 ;;;;;;;;;;;;;;;;;;
 
-(setq log_file (roamJournalFile))
-(if (file-exists-p log_file) nil (myRoamJournal))
+;; (setq log_file (roamJournalFile))
+;; (if (file-exists-p log_file) nil (myRoamJournal))
 
-(setq org-capture-templates
-      '(("t" "TODO" entry (file+datetree "~/org/toDo/todo.org")
-         "* TODO %?\n %i")
-        ("l" "LOG" entry (file+headline log_file "Log")
-         "* %U %? %i")
-        ("q" "Quick" entry (file+headline "~/org/inbox.org" "InBox")
-         "* %U %?\n %i")
-        ("m" "TODO imorgon" entry (file+datetree "~/org/toDo/todo.org")
-         "* TODO %?\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+1d\"))\n %i")))
+;; (setq org-capture-templates
+;;       '(("t" "TODO" entry (file+datetree "~/org/toDo/todo.org")
+;;         "* TODO %?\n %i")
+;;        ("l" "LOG" entry (file+headline log_file "Log")
+;;         "* %U %? %i")
+;;        ("q" "Quick" entry (file+headline "~/org/inbox.org" "InBox")
+;;         "* %U %?\n %i")
+;;        ("m" "TODO imorgon" entry (file+datetree "~/org/toDo/todo.org")
+;;         "* TODO %?\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+1d\"))\n %i")))
