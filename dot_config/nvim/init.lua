@@ -494,7 +494,7 @@ require("lazy").setup({
 
 
 
-- NOTE:
+-- NOTE:
 -- Script to toggle numbers!
 -- =========================
 
