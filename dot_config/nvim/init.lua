@@ -134,14 +134,10 @@ require("lazy").setup({
 
 --NOTE: Theme
 
-{ "catppuccin/nvim",
-  name = "catppuccin", 
-  priority = 1000, 
-  config = function()
-    vim.cmd("colorscheme catppuccin-macchiato")
-  end},
+{ "catppuccin/nvim", name = "catppuccin"}, 
+{ "rose-pine/neovim", name = "rose-pine" },
 
-	-- NOTE: which-key
+  -- NOTE: which-key
 	--
 	{ -- Useful plugin to show you pending keybinds.
 		"folke/which-key.nvim",
@@ -492,7 +488,12 @@ require("lazy").setup({
 }) 
 -- END LAZY 
 
-
+-- NOTE:
+-- THEME SELECTIOM
+vim.cmd("colorscheme rose-pine")
+-- vim.cmd("colorscheme rose-pine-main")
+-- vim.cmd("colorscheme rose-pine-moon")
+-- vim.cmd("colorscheme rose-pine-dawn")
 
 -- NOTE:
 -- Script to toggle numbers!
