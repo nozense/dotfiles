@@ -20,6 +20,7 @@ set guioptions-=r  	" No scrollbar
 set number              " Show current line number
 set relativenumber      " Show relative line numbers
 set termguicolors       " for catppuccin to display correctly
+set laststatus=2	" for lightline to show up!
 
 " Make a home dir!
 if has('win32') || has ('win64')
@@ -33,9 +34,9 @@ let $LOCALRC = $VIMHOME."/local.vimrc"
 silent! so $LOCALRC
 
 call plug#begin()
-Plug 'vim-airline/vim-airline'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'rose-pine/vim', { 'as': 'rosepine' }
 Plug 'easymotion/vim-easymotion'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " <Leader>f{char} to move to {char}
@@ -53,6 +54,6 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-:colorscheme catppuccin_macchiato
-let g:airline_theme = 'catppuccin_macchiato'
-
+set background=dark
+:colorscheme rosepine
+let g:lightline = { 'colorscheme': 'rosepine' }
