@@ -460,7 +460,7 @@ require("lazy").setup({
           icons_enabled = true,
           component_separators = '.',
           section_separators = '|',
-          theme = "catppuccin",
+          theme = "rose-pine",
           },
         sections = {
           lualine_a = {'mode'},
@@ -494,6 +494,7 @@ vim.cmd("colorscheme rose-pine")
 -- vim.cmd("colorscheme rose-pine-main")
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme rose-pine-dawn")
+-- vim.cmd("colorscheme catppuccin-macchiato")
 
 -- NOTE:
 -- Script to toggle numbers!
