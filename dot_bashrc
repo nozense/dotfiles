@@ -103,6 +103,8 @@ fi
 #
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
+# .local/bin
+export PATH="~/.local/bin:$PATH"
 
 # Automatically added by the Guix install script.
 if [ -n "$GUIX_ENVIRONMENT" ]; then
