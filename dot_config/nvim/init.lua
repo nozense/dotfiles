@@ -138,7 +138,7 @@ require("lazy").setup({
 { "rose-pine/neovim", name = "rose-pine" },
 { "ellisonleao/gruvbox.nvim", name="gruvbox" },
 
-
+--NOTE: Which-key
   {
   "folke/which-key.nvim",
   event = "VeryLazy",
@@ -157,6 +157,18 @@ require("lazy").setup({
     },
   },
 },
+
+--NOTE: Render markdown
+{
+    'MeanderingProgrammer/render-markdown.nvim',
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
+},
+
 
 
 	-- NOTE: TELESCOPE
