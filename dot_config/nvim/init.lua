@@ -136,25 +136,28 @@ require("lazy").setup({
 
 { "catppuccin/nvim", name = "catppuccin"}, 
 { "rose-pine/neovim", name = "rose-pine" },
+{ "ellisonleao/gruvbox.nvim", name="gruvbox" },
 
-  -- NOTE: which-key
-	--
-	{ -- Useful plugin to show you pending keybinds.
-		"folke/which-key.nvim",
-		event = "VimEnter", -- Sets the loading event to 'VimEnter'
-		config = function() -- This is the function that runs, AFTER loading
-			require("which-key").setup()
 
-			-- Document existing key chains
-			require("which-key").register({
-				["<leader>c"] = { name = "[C]ode", _ = "which_key_ignore" },
-				["<leader>d"] = { name = "[D]ocument", _ = "which_key_ignore" },
-				["<leader>r"] = { name = "[R]ename", _ = "which_key_ignore" },
-				["<leader>s"] = { name = "[S]earch", _ = "which_key_ignore" },
-				["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
-			})
-		end,
-	},
+  {
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  },
+  keys = {
+    {
+      "<leader>?",
+      function()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
+},
+
 
 	-- NOTE: TELESCOPE
 	--
@@ -490,7 +493,8 @@ require("lazy").setup({
 
 -- NOTE:
 -- THEME SELECTIOM
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme gruvbox")
+-- vim.cmd("colorscheme rose-pine")
 -- vim.cmd("colorscheme rose-pine-main")
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme rose-pine-dawn")
